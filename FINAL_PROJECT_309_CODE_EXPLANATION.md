@@ -293,7 +293,6 @@ hbargraph(counts[:10], variable_results[:10], "Top 10 Journals ENCODE Authors Pu
 
 <div>
     <a href="https://plot.ly/~mpagan2/8/?share_key=ur3Ju4ygPpnMhSs5BS2ICs" target="_blank" title="Top 10 Journals ENCODE Authors Publish In" style="display: block; text-align: center;"><img src="https://plot.ly/~mpagan2/8.png?share_key=ur3Ju4ygPpnMhSs5BS2ICs" alt="Top 10 Journals ENCODE Authors Publish In" style="max-width: 100%;width: 1000px;"  width="1000" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
-    <script data-plotly="mpagan2:8" sharekey-plotly="ur3Ju4ygPpnMhSs5BS2ICs" src="https://plot.ly/embed.js" async></script>
 </div>
 
 
@@ -310,7 +309,6 @@ hbargraph(counts[:10], variable_results[:10], "Top 10 Journals Published In By S
 
 <div>
     <a href="https://plot.ly/~mpagan2/12/?share_key=yjKIkFEQCHep5vqRgfgd75" target="_blank" title="Top 10 Journals Published In By Single ENCODE Author" style="display: block; text-align: center;"><img src="https://plot.ly/~mpagan2/12.png?share_key=yjKIkFEQCHep5vqRgfgd75" alt="Top 10 Journals Published In By Single ENCODE Author" style="max-width: 100%;width: 1000px;"  width="1000" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
-    <script data-plotly="mpagan2:12" sharekey-plotly="yjKIkFEQCHep5vqRgfgd75" src="https://plot.ly/embed.js" async></script>
 </div>
 
 
@@ -326,7 +324,6 @@ hbargraph(counts[:10], variable_results[:10], "Top 10 ENCODE Authors")
 
 <div>
     <a href="https://plot.ly/~mpagan2/14/?share_key=9590HiWBD57bnd6LQEgt52" target="_blank" title="Top 10 ENCODE Authors" style="display: block; text-align: center;"><img src="https://plot.ly/~mpagan2/14.png?share_key=9590HiWBD57bnd6LQEgt52" alt="Top 10 ENCODE Authors" style="max-width: 100%;width: 1000px;"  width="1000" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
-    <script data-plotly="mpagan2:14" sharekey-plotly="9590HiWBD57bnd6LQEgt52" src="https://plot.ly/embed.js" async></script>
 </div>
 
 
@@ -393,7 +390,6 @@ bargraph(sorted_years, pubs_by_year, labels, "ENCODE Publications By Year")
 
 <div>
     <a href="https://plot.ly/~mpagan2/0/?share_key=szBUTYmevciVRYpoRxojVB" target="_blank" title="ENCODE Publications By Year" style="display: block; text-align: center;"><img src="https://plot.ly/~mpagan2/0.png?share_key=szBUTYmevciVRYpoRxojVB" alt="ENCODE Publications By Year" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
-    <script data-plotly="mpagan2:0" sharekey-plotly="szBUTYmevciVRYpoRxojVB" src="https://plot.ly/embed.js" async></script>
 </div>
 
 
@@ -452,7 +448,6 @@ linegraph(sorted_years, sum_pubs, total_labels, "ENCODE Publications Over Time")
 
 <div>
     <a href="https://plot.ly/~mpagan2/16/?share_key=7fliCA1KsyxgUT5WPNbcvn" target="_blank" title="Publications Over Time - Line" style="display: block; text-align: center;"><img src="https://plot.ly/~mpagan2/16.png?share_key=7fliCA1KsyxgUT5WPNbcvn" alt="Publications Over Time - Line" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
-    <script data-plotly="mpagan2:16" sharekey-plotly="7fliCA1KsyxgUT5WPNbcvn" src="https://plot.ly/embed.js" async></script>
 </div>
 
 
