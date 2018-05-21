@@ -44,7 +44,7 @@ def get_pubmed_data(pmids, attrb_list):
    
     """Returns full PubMed data records for desired PMIDs in XML format. PMIDs can be found online in PubMed
     and can be accepted individually or as a list. Desired data from PMIDs ('attrb_list')
-    can be viewed here *insert text file's github link here* """
+    can be viewed here: https://github.com/michael-pagan/BIOF-309-Project/blob/master/publications.csv"""
         
     pubs_list = []
     pmid_number = len(pmids.index)
@@ -454,4 +454,5 @@ linegraph(sorted_years, sum_pubs, total_labels, "ENCODE Publications Over Time")
 
 
 
+### References
 
