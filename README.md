@@ -1,6 +1,6 @@
 # BIOF-309-Project
 
-## ACCESSING PUBMED TO ANALYZE ENCODE PROJECT PUBLICATIONS*
+## Accessing PubMed To Analyze ENCODE Project Publications
 
 ### Introduction:
 
@@ -12,9 +12,7 @@ It is important for both researchers and the public to be able to access the inf
 
 ### Objective:
 
-To access PubMed via assess the number of ENCODE publications per year, the number of ENCODE publications over time and the journal most published in
-
-To create several barplots to show our results
+To access publication information from PubMed using known PMIDs to assess trends such as the number of ENCODE publications per year, the number of ENCODE publications over time and the journal most published in.
 
 ### Methods:
 
@@ -436,7 +434,8 @@ def linegraph(xaxis, yaxis, line_labels, title):
 #Sum the publications sequentially by year
 sum_pubs = np.cumsum(pubs_by_year)
 
-#Grab unique years from "PubDate" column of pd_docs, sort the years, and create "Total Number of Publications in 'Year'" labels
+#Grab unique years from "PubDate" column of pd_docs, sort the years, 
+#and create "Total Number of Publications in 'Year'" labels
 get_total_year_labels = pd_docs["Publication Date"].unique()
 sorted_total_year_labels = sorted(get_total_year_labels)
 total_labels = ["Total Number of Publications in " + i for i in sorted_total_year_labels]
