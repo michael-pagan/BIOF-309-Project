@@ -1,0 +1,55 @@
+Example data that can be extracted from PubMed via the get_pubmed_data function 
+by using the attributes listed as <Item Name = "Attribute">
+
+<?xml version="1.0" encoding="UTF-8"  ?>
+<!DOCTYPE eSummaryResult PUBLIC "-//NLM//DTD esummary v1 20041029//EN" "https://eutils.ncbi.nlm.nih.gov/eutils/dtd/20041029/esummary-v1.dtd">
+<eSummaryResult>
+
+<DocSum>
+	<Id>18665130</Id>
+	<Item Name="PubDate" Type="Date">2008 Aug</Item>
+	<Item Name="EPubDate" Type="Date"></Item>
+	<Item Name="Source" Type="String">Nat Genet</Item>
+	<Item Name="AuthorList" Type="List">
+		<Item Name="Author" Type="String">Gingeras TR</Item>
+	</Item>
+	<Item Name="LastAuthor" Type="String">Gingeras TR</Item>
+	<Item Name="Title" Type="String">Mapping the strand-specific transcriptome of fission yeast.</Item>
+	<Item Name="Volume" Type="String">40</Item>
+	<Item Name="Issue" Type="String">8</Item>
+	<Item Name="Pages" Type="String">935-6</Item>
+	<Item Name="LangList" Type="List">
+		<Item Name="Lang" Type="String">English</Item>
+	</Item>
+	<Item Name="NlmUniqueID" Type="String">9216904</Item>
+	<Item Name="ISSN" Type="String">1061-4036</Item>
+	<Item Name="ESSN" Type="String">1546-1718</Item>
+	<Item Name="PubTypeList" Type="List">
+		<Item Name="PubType" Type="String">Comment</Item>
+		<Item Name="PubType" Type="String">News</Item>
+	</Item>
+	<Item Name="RecordStatus" Type="String">PubMed - indexed for MEDLINE</Item>
+	<Item Name="PubStatus" Type="String">ppublish</Item>
+	<Item Name="ArticleIds" Type="List">
+		<Item Name="pubmed" Type="String">18665130</Item>
+		<Item Name="pii" Type="String">ng0808-935</Item>
+		<Item Name="doi" Type="String">10.1038/ng0808-935</Item>
+		<Item Name="rid" Type="String">18665130</Item>
+		<Item Name="eid" Type="String">18665130</Item>
+	</Item>
+	<Item Name="DOI" Type="String">10.1038/ng0808-935</Item>
+	<Item Name="History" Type="List">
+		<Item Name="pubmed" Type="Date">2008/07/31 09:00</Item>
+		<Item Name="medline" Type="Date">2008/09/03 09:00</Item>
+		<Item Name="entrez" Type="Date">2008/07/31 09:00</Item>
+	</Item>
+	<Item Name="References" Type="List">
+		<Item Name="Comment on" Type="String">Nat Genet. 2008 Aug;40(8):977-86. PMID: 18641648</Item>
+	</Item>
+	<Item Name="HasAbstract" Type="Integer">0</Item>
+	<Item Name="PmcRefCount" Type="Integer">0</Item>
+	<Item Name="FullJournalName" Type="String">Nature genetics</Item>
+	<Item Name="ELocationID" Type="String">doi: 10.1038/ng0808-935</Item>
+	<Item Name="SO" Type="String">2008 Aug;40(8):935-6</Item>
+</DocSum>
+</eSummaryResult>
