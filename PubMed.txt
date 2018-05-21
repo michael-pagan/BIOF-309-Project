@@ -1,5 +1,4 @@
-Example data that can be extracted from PubMed via the get_pubmed_data function 
-by using the attributes listed as <Item Name = "Attribute">
+Example data that can be extracted from PubMed via the get_pubmed_data function by using the attributes listed as <Item Name = "Attribute">. Desired "Attribute" should be included in the 'attrb_list'.
 
 <?xml version="1.0" encoding="UTF-8"  ?>
 <!DOCTYPE eSummaryResult PUBLIC "-//NLM//DTD esummary v1 20041029//EN" "https://eutils.ncbi.nlm.nih.gov/eutils/dtd/20041029/esummary-v1.dtd">
