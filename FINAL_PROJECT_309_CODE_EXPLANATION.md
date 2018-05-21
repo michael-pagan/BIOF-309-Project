@@ -3,13 +3,11 @@ SCRAPING PUBMED TO ANALYZE ENCODE PROJECT PUBLICATIONS
 
 Introduction:
 
-The Encyclopedia Of DNA Elements (ENCODE) is a colaboration of research groups funded by the National Human Genome Research Institute(NHGRI) in 2003. It was planned as a follow-up to the Human Genome Project and has already begun its fourth phase on February 2017.
+The Encyclopedia Of DNA Elements (ENCODE) is a collaboration of research groups funded by the National Human Genome Research Institute(NHGRI) in 2003. It was planned as a follow-up to the Human Genome Project and began its fourth phase in February 2017.
 
 The aim of this project is to identify all functional elements in the human genome sequence (only the role of 1.5% of the genome is known) and build a list of functional elements in the human genome. The ENCODE Project has given researchers insight into how the human genome functions.
-All the abovementioned serve as an expansive resource for understanding human health and disease.
 
-A very important point for researchers is to be able to access the information from databases like PubMed, GEO, etc. Entrez is a data retrieval system that provides users access to NCBI’s databases manually, or by using Biopython’s Bio.Entrez module wich allows you to search PubMed or download GenBank records from within a Python script.
-
+It is important for both researchers and the public to be able to access the information from databases like PubMed, GEO, etc. Entrez is a data retrieval system that provides users access to NCBI’s databases manually, or by using Biopython’s Bio.Entrez module wich allows you to search PubMed or download GenBank records from within a Python script.
 
 Objective:
 
