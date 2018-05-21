@@ -1,4 +1,4 @@
-# BIOF-309-Project
+# BIOF-309-Project - Michael Pagan & Maria Casal-Dominguez
 
 ## Accessing PubMed To Analyze ENCODE Project Publications
 
