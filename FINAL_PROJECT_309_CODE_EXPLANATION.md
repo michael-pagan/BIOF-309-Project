@@ -1,29 +1,27 @@
+#*ACCESSING PUBMED TO ANALYZE ENCODE PROJECT PUBLICATIONS*
 
-SCRAPING PUBMED TO ANALYZE ENCODE PROJECT PUBLICATIONS
+##Introduction:
 
-Introduction:
+The Encyclopedia Of DNA Elements (ENCODE) is a collaboration of research groups funded by the National Human Genome Research Institute that was planned as a follow-up to the Human Genome Project after it's conclusion in 2003. The goal of ENCODE is to identify all of the elements in the human and mouse genomes and make this information available as a resource to the biomedical community. In February 2017, ENCODE began it's fourth funding phase that extends through 2021.
 
-The Encyclopedia Of DNA Elements (ENCODE) is a collaboration of research groups funded by the National Human Genome Research Institute(NHGRI) in 2003. It was planned as a follow-up to the Human Genome Project and began its fourth phase in February 2017.
+##Rationale:
 
-The aim of this project is to identify all functional elements in the human genome sequence (only the role of 1.5% of the genome is known) and build a list of functional elements in the human genome. The ENCODE Project has given researchers insight into how the human genome functions.
+It is important for both researchers and the public to be able to access the information from databases like PubMed, GEO, etc. Here, we developed a method to access publications information in PubMed through a Python script utilzing the Entrez package within the Biopython module to extract publication information from PMIDs.
 
-It is important for both researchers and the public to be able to access the information from databases like PubMed, GEO, etc. Entrez is a data retrieval system that provides users access to NCBI’s databases manually, or by using Biopython’s Bio.Entrez module wich allows you to search PubMed or download GenBank records from within a Python script.
+##Objective:
 
-Objective:
-
-To assess:
-The number of ENCODE publications per year, the number of ENCODE publications over time and the journal most published in
+To access PubMed via assess the number of ENCODE publications per year, the number of ENCODE publications over time and the journal most published in
 
 To create several barplots to show our results
 
-Methods:
+##Methods:
 
 In this project, we use the Bio.Entrez module to to obtain journal information from PubMed on the basis of a csv file where we had the PMIDs numbers from 690 ENTREZ papers. Our variables of interest were journal name, year of publication and name of the last author.
 
 For the barplot creation we imported the pandas library, numpy, plotly.graph_objs, plotly.plotly, and matplotlib.pyplot
 
 
-Code:
+##Code:
 
 
 ```python
@@ -306,7 +304,10 @@ hbargraph(counts[:10], variable_results[:10], "Top 10 Journals ENCODE Authors Pu
 
 
 
-<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~mpagan2/8.embed" height="500px" width="1000px"></iframe>
+<div>
+    <a href="https://plot.ly/~mpagan2/12/?share_key=yjKIkFEQCHep5vqRgfgd75" target="_blank" title="Top 10 Journals Published In By Single ENCODE Author" style="display: block; text-align: center;"><img src="https://plot.ly/~mpagan2/12.png?share_key=yjKIkFEQCHep5vqRgfgd75" alt="Top 10 Journals Published In By Single ENCODE Author" style="max-width: 100%;width: 1000px;"  width="1000" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+    <script data-plotly="mpagan2:12" sharekey-plotly="yjKIkFEQCHep5vqRgfgd75" src="https://plot.ly/embed.js" async></script>
+</div>
 
 
 
