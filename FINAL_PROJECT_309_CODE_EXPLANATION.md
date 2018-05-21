@@ -434,7 +434,8 @@ def linegraph(xaxis, yaxis, line_labels, title):
 #Sum the publications sequentially by year
 sum_pubs = np.cumsum(pubs_by_year)
 
-#Grab unique years from "PubDate" column of pd_docs, sort the years, and create "Total Number of Publications in 'Year'" labels
+#Grab unique years from "PubDate" column of pd_docs, sort the years, and create 
+#"Total Number of Publications in 'Year'" labels
 get_total_year_labels = pd_docs["Publication Date"].unique()
 sorted_total_year_labels = sorted(get_total_year_labels)
 total_labels = ["Total Number of Publications in " + i for i in sorted_total_year_labels]
