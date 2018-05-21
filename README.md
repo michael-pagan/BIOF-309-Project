@@ -295,6 +295,7 @@ hbargraph(counts[:10], variable_results[:10], "Top 10 Journals ENCODE Authors Pu
     <a href="https://plot.ly/~mpagan2/8/?share_key=ur3Ju4ygPpnMhSs5BS2ICs" target="_blank" title="Top 10 Journals ENCODE Authors Publish In" style="display: block; text-align: center;"><img src="https://plot.ly/~mpagan2/8.png?share_key=ur3Ju4ygPpnMhSs5BS2ICs" alt="Top 10 Journals ENCODE Authors Publish In" style="max-width: 100%;width: 1000px;"  width="1000" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
 </div>
 
+View in [plotly](https://plot.ly/~mpagan2/8/top-10-journals-encode-authors-publish-in/)
 
 
 
@@ -311,6 +312,7 @@ hbargraph(counts[:10], variable_results[:10], "Top 10 Journals Published In By S
     <a href="https://plot.ly/~mpagan2/12/?share_key=yjKIkFEQCHep5vqRgfgd75" target="_blank" title="Top 10 Journals Published In By Single ENCODE Author" style="display: block; text-align: center;"><img src="https://plot.ly/~mpagan2/12.png?share_key=yjKIkFEQCHep5vqRgfgd75" alt="Top 10 Journals Published In By Single ENCODE Author" style="max-width: 100%;width: 1000px;"  width="1000" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
 </div>
 
+View in [plotly](https://plot.ly/~mpagan2/12/top-10-journals-published-in-by-single-encode-author/)
 
 
 
@@ -326,6 +328,7 @@ hbargraph(counts[:10], variable_results[:10], "Top 10 ENCODE Authors")
     <a href="https://plot.ly/~mpagan2/14/?share_key=9590HiWBD57bnd6LQEgt52" target="_blank" title="Top 10 ENCODE Authors" style="display: block; text-align: center;"><img src="https://plot.ly/~mpagan2/14.png?share_key=9590HiWBD57bnd6LQEgt52" alt="Top 10 ENCODE Authors" style="max-width: 100%;width: 1000px;"  width="1000" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
 </div>
 
+View in [plotly](https://plot.ly/~mpagan2/14/top-10-encode-authors/)
 
 
 
@@ -392,6 +395,7 @@ bargraph(sorted_years, pubs_by_year, labels, "ENCODE Publications By Year")
     <a href="https://plot.ly/~mpagan2/0/?share_key=szBUTYmevciVRYpoRxojVB" target="_blank" title="ENCODE Publications By Year" style="display: block; text-align: center;"><img src="https://plot.ly/~mpagan2/0.png?share_key=szBUTYmevciVRYpoRxojVB" alt="ENCODE Publications By Year" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
 </div>
 
+View in [plotly](https://plot.ly/~mpagan2/0/encode-publications-by-year/)
 
 
 
@@ -451,8 +455,9 @@ linegraph(sorted_years, sum_pubs, total_labels, "ENCODE Publications Over Time")
     <a href="https://plot.ly/~mpagan2/16/?share_key=7fliCA1KsyxgUT5WPNbcvn" target="_blank" title="Publications Over Time - Line" style="display: block; text-align: center;"><img src="https://plot.ly/~mpagan2/16.png?share_key=7fliCA1KsyxgUT5WPNbcvn" alt="Publications Over Time - Line" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
 </div>
 
+View in [plotly](https://plot.ly/~mpagan2/20/encode-publications-over-time/)
 
 
 
-### References
+
 
