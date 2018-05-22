@@ -4,7 +4,7 @@
 
 ### Introduction:
 
-The goal of The Encyclopedia Of DNA Elements (ENCODE) Project is to identify all of the elements in the human and mouse genomes and make this information available as a resource to the biomedical community. The ENCODE Project is a collaboration of research groups funded by the National Human Genome Research Institute that was planned as a follow-up to the Human Genome Project after it's conclusion in 2003. In February 2017, ENCODE began it's fourth funding phase that extends through 2021.
+The goal of [The Encyclopedia Of DNA Elements (ENCODE) Project](https://www.genome.gov/encode/) is to identify all of the elements in the human and mouse genomes and make this information available as a resource to the biomedical community. The ENCODE Project is a collaboration of research groups funded by the National Human Genome Research Institute that was planned as a follow-up to the Human Genome Project after it's conclusion in 2003. In February 2017, ENCODE began it's fourth funding phase that extends through 2021.
 
 ### Objective:
 
