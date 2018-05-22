@@ -4,7 +4,7 @@
 
 ### Introduction:
 
-The goal of [The Encyclopedia Of DNA Elements (ENCODE) Project](https://www.genome.gov/encode/) is to identify all of the elements in the human and mouse genomes and make this information available as a resource to the biomedical community. The ENCODE Project is a collaboration of research groups funded by the National Human Genome Research Institute that was planned as a follow-up to the Human Genome Project after it's conclusion in 2003. In February 2017, ENCODE began it's fourth funding phase that extends through 2021.
+The goal of [The Encyclopedia Of DNA Elements (ENCODE) Project](https://www.genome.gov/encode/) is to identify all of the elements in the human and mouse genomes and make this information available as a resource to the biomedical community. The ENCODE Project is a collaboration of research groups funded by the National Human Genome Research Institute (NHGRI) that was planned as a follow-up to the Human Genome Project after it's conclusion in 2003. In February 2017, ENCODE began it's fourth funding phase. A large project that has been around for 15 years, the [ENCODE Project has produced a lot of data](https://www.encodeproject.org/) and hundreds of publications. NHGRI is interested in curating the Consortium's publication information in-house to track the Consortium's progress.
 
 ### Objective:
 
@@ -12,7 +12,7 @@ It is important for both researchers and the public to be able to access the inf
 
 ### Methods:
 
-#### Using Entrez, defined a function extract PMID's publication information from PubMed. [More information on Biopython's Entrez.eftech can be found here.](https://dataguide.nlm.nih.gov/eutilities/utilities.html#efetch)
+#### Using Entrez, define a function to extract PMID's publication information from PubMed. [More information on Biopython's Entrez.eftech can be found here.](https://dataguide.nlm.nih.gov/eutilities/utilities.html#efetch)
 
 ```python
 #Import modules
