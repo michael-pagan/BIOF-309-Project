@@ -541,4 +541,4 @@ linegraph(sorted_years, sum_pubs, total_labels, "ENCODE Publications Over Time")
 View in [plotly](https://plot.ly/~mpagan2/20/encode-publications-over-time/)
 
 ### Special Thanks
-Thanks to Martin, Ben, and Michael for a great semester as we took our first stab at Python! We are grateful for this experience and look forward to using what we learned here to become better programmers!
+Thanks to Martin, Ben, and Michael for a great semester as we took our first stab at Python! We are grateful for this experience and look forward become even better programmers with the foundation we gained here!
