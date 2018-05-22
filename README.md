@@ -4,25 +4,15 @@
 
 ### Introduction:
 
-The Encyclopedia Of DNA Elements (ENCODE) is a collaboration of research groups funded by the National Human Genome Research Institute that was planned as a follow-up to the Human Genome Project after it's conclusion in 2003. The goal of ENCODE is to identify all of the elements in the human and mouse genomes and make this information available as a resource to the biomedical community. In February 2017, ENCODE began it's fourth funding phase that extends through 2021.
-
-### Rationale:
-
-It is important for both researchers and the public to be able to access the information from databases like PubMed, GEO, etc. Here, we developed a method to access publications information in PubMed through a Python script utilzing the Entrez package within the Biopython module to extract publication information from PMIDs.
+The goal of The Encyclopedia Of DNA Elements (ENCODE) Project is to identify all of the elements in the human and mouse genomes and make this information available as a resource to the biomedical community. The ENCODE Project is a collaboration of research groups funded by the National Human Genome Research Institute that was planned as a follow-up to the Human Genome Project after it's conclusion in 2003. In February 2017, ENCODE began it's fourth funding phase that extends through 2021.
 
 ### Objective:
 
-To access publication information from PubMed using known PMIDs to assess trends such as the number of ENCODE publications per year, the number of ENCODE publications over time and the journal most published in.
+It is important for both researchers and the public to be able to access the information from databases like PubMed, GEO, etc. Here, we developed a method to access publication information in PubMed utilzing the Entrez package within the Biopython module to extract publication information from specified PMIDs. We then assessed trends such as the number of ENCODE publications per year, the number of ENCODE publications over time and the journal most published in.
 
 ### Methods:
 
-In this project, we use the Bio.Entrez module to to obtain journal information from PubMed on the basis of a csv file where we had the PMIDs numbers from 690 ENTREZ papers. Our variables of interest were journal name, year of publication and name of the last author.
-
-For the barplot creation we imported the pandas library, numpy, plotly.graph_objs, plotly.plotly, and matplotlib.pyplot
-
-
-### Code:
-
+#### Using Entrez, defined a function extract PMID's publication information from PubMed. [More information on Biopython's Entrez.eftech can be found here.](https://dataguide.nlm.nih.gov/eutilities/utilities.html#efetch)
 
 ```python
 #Import modules
@@ -90,6 +80,7 @@ def get_pubmed_data(pmids, attrb_list):
     return pd_docs
 ```
 
+#### Use the get_pubmed_data function to create a DataFrame of the desired publication information
 
 ```python
 #Import the csv with the pmids as a DataFrame
@@ -204,6 +195,7 @@ pd_docs = get_pubmed_data(pmids, attrb_list)
     (691, 5)
 
 
+#### Define a function to sort the data from most to least frequently appearing
 
 ```python
 #Define a function to sort desired data
@@ -240,6 +232,7 @@ def get_variable(dataFrame, variable):
     return variable_results, counts
 ```
 
+#### Create the graphs
 
 ```python
 #Authenticate plotly
