@@ -283,9 +283,7 @@ print(pd_docs.shape)
 </table>
 </div>
 
-```python
-(691,5)
-```
+    (691,5)
 
 #### Define a function to sort the data from most to least frequently appearing
 
