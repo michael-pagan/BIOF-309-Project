@@ -19,12 +19,10 @@ It is important for both researchers and the public to be able to access the inf
 import pandas as pd
 import numpy as np
 from Bio import Entrez
-import matplotlib.pyplot as plt
 import plotly
 import plotly.plotly as py
 import plotly.graph_objs as go
-from collections import Counter
-%matplotlib inline 
+from collections import Counter 
 
 #Register with Entrez
 Entrez.email = "maria.casal.dominguez@gmail.com"
@@ -32,9 +30,9 @@ Entrez.email = "maria.casal.dominguez@gmail.com"
 #Define a function to grab the desired attributes of the PMIDs from PubMed
 def get_pubmed_data(pmids, attrb_list):
    
-    """Returns full PubMed data records for desired PMIDs in XML format. PMIDs can be found online in PubMed
-    and can be accepted individually or as a list. Desired data from PMIDs ('attrb_list')
-    can be viewed here: https://github.com/michael-pagan/BIOF-309-Project/blob/master/publications.csv"""
+    """Returns full PubMed data records for desired PMIDs in XML format. PMIDs can be found online 
+    in PubMed and can be accepted individually or as a list. Desired data from PMIDs ('attrb_list')
+    can be viewed here https://github.com/michael-pagan/BIOF-309-Project/blob/master/PubMed.txt"""
         
     pubs_list = []
     pmid_number = len(pmids.index)
@@ -63,12 +61,6 @@ def get_pubmed_data(pmids, attrb_list):
             iteration_number += 1
 
     pd_docs = pd.DataFrame(pubs_list, columns=attrb_list)
-    
-    #Clean the data
-    pd_docs.columns = ['PMID', 'Full Journal Name', 'Last Author', 'Publication Date']
-    pd_docs['Publication Date'] = pd_docs['Publication Date'].apply(lambda x: str(x)[:4])
-    pd_docs['Full Journal Name'] = pd_docs['Full Journal Name'].apply(lambda x: str(x)[:40])
-    pd_docs["Author: Journal"] = pd_docs["Last Author"] + ": " + pd_docs["Full Journal Name"]
 
     #Show the DataFrame
     display(pd_docs.head(10))
@@ -92,7 +84,6 @@ attrb_list = ["Id", "FullJournalName", "LastAuthor", "PubDate"]
 #Call the function to grab the data
 pd_docs = get_pubmed_data(pmids, attrb_list)
 ```
-
 
 <div>
 <table border="1" class="dataframe">
@@ -194,6 +185,18 @@ pd_docs = get_pubmed_data(pmids, attrb_list)
 
     (691, 5)
 
+#### Clean the DataFrame
+```python
+#Clean the data
+pd_docs = pd_docs.rename(index=str, columns={"Id": "PMID", "FullJournalName": "Full Journal Name", 
+                            "LastAuthor": "Last Author", "PubDate": "Publication Date"})
+pd_docs['Publication Date'] = pd_docs['Publication Date'].apply(lambda x: str(x)[:4])
+pd_docs['Full Journal Name'] = pd_docs['Full Journal Name'].apply(lambda x: str(x)[:40])
+pd_docs["Author: Journal"] = pd_docs["Last Author"] + ": " + pd_docs["Full Journal Name"]
+
+display(pd_docs.head(10))
+print(pd_docs.shape)
+```
 
 #### Define a function to sort the data from most to least frequently appearing
 
