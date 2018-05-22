@@ -94,6 +94,107 @@ pd_docs = get_pubmed_data(pmids, attrb_list)
       <th>Full Journal Name</th>
       <th>Last Author</th>
       <th>Publication Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>18665130</td>
+      <td>Nature genetics</td>
+      <td>Gingeras TR</td>
+      <td>2008</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>17568007</td>
+      <td>Genome research</td>
+      <td>Stamatoyannopoulos JA</td>
+      <td>2007</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>17166863</td>
+      <td>Nucleic acids research</td>
+      <td>Kent WJ</td>
+      <td>2007</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>17567993</td>
+      <td>Genome research</td>
+      <td>Gerstein MB</td>
+      <td>2007</td
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>17567995</td>
+      <td>Genome research</td>
+      <td>Sidow A</td>
+      <td>2007</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>18258921</td>
+      <td>Genome research</td>
+      <td>Liu XS</td>
+      <td>2008</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>17568011</td>
+      <td>Genome research</td>
+      <td>Baxevanis AD</td>
+      <td>2007</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>19425134</td>
+      <td>Genome informatics. International Confer</td>
+      <td>Tullius TD</td>
+      <td>2008</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>21439813</td>
+      <td>Current opinion in structural biology</td>
+      <td>Tullius TD</td>
+      <td>2011</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>19286520</td>
+      <td>Science (New York, N.Y.)</td>
+      <td>Margulies EH</td>
+      <td>2009</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+    (691, 4)
+
+#### Clean the DataFrame
+```python
+#Clean the data
+pd_docs = pd_docs.rename(index=str, columns={"Id": "PMID", "FullJournalName": "Full Journal Name", 
+                            "LastAuthor": "Last Author", "PubDate": "Publication Date"})
+pd_docs['Publication Date'] = pd_docs['Publication Date'].apply(lambda x: str(x)[:4])
+pd_docs['Full Journal Name'] = pd_docs['Full Journal Name'].apply(lambda x: str(x)[:40])
+pd_docs["Author: Journal"] = pd_docs["Last Author"] + ": " + pd_docs["Full Journal Name"]
+
+display(pd_docs.head(10))
+print(pd_docs.shape)
+```
+
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>PMID</th>
+      <th>Full Journal Name</th>
+      <th>Last Author</th>
+      <th>Publication Date</th>
       <th>Author: Journal</th>
     </tr>
   </thead>
@@ -182,20 +283,8 @@ pd_docs = get_pubmed_data(pmids, attrb_list)
 </table>
 </div>
 
-
-    (691, 5)
-
-#### Clean the DataFrame
 ```python
-#Clean the data
-pd_docs = pd_docs.rename(index=str, columns={"Id": "PMID", "FullJournalName": "Full Journal Name", 
-                            "LastAuthor": "Last Author", "PubDate": "Publication Date"})
-pd_docs['Publication Date'] = pd_docs['Publication Date'].apply(lambda x: str(x)[:4])
-pd_docs['Full Journal Name'] = pd_docs['Full Journal Name'].apply(lambda x: str(x)[:40])
-pd_docs["Author: Journal"] = pd_docs["Last Author"] + ": " + pd_docs["Full Journal Name"]
-
-display(pd_docs.head(10))
-print(pd_docs.shape)
+(691,5)
 ```
 
 #### Define a function to sort the data from most to least frequently appearing
