@@ -8,7 +8,7 @@ The goal of [The Encyclopedia Of DNA Elements (ENCODE) Project](https://www.geno
 
 ### Objective:
 
-It is important for both researchers and the public to be able to access the information from databases like PubMed, GEO, etc. Here, we developed a method to access publication information in PubMed utilzing the Entrez package within the Biopython module to extract publication information from specified PMIDs. We then assessed trends such as the number of ENCODE publications per year, the number of ENCODE publications over time and the journal most published in.
+It is important for both researchers and the public to be able to access the information from databases like PubMed, GEO, etc. Here, we developed a method to access and extract publication information from specified PMIDs in PubMed utilzing the Entrez package within the Biopython module. We then assessed trends such as the number of ENCODE publications per year, the number of ENCODE publications over time and the journal most published in.
 
 ### Methods:
 
